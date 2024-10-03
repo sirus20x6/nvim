@@ -22,6 +22,14 @@ require("lazy").setup({
     { import = "plugins" },
     -- import C++ development configuration
     { import = "plugins.cpp-dev" },
+    { import = "plugins.neonnight" },
+    { import = "plugins.telescope" },
+    { import = "plugins.lualine" },
+    { import = "plugins.indent-blankline" },
+    { import = "plugins.lsp-zero" },
+    { import = "plugins.lsp-keybinds" },
+    { import = "plugins.trouble" },
+    
     -- import Godot development configuration
     --{ import = "plugins.godot-gdextension" },
     -- import Zig development configuration
@@ -31,7 +39,6 @@ require("lazy").setup({
     lazy = false,
     version = false, -- always use the latest git commit
   },
-  install = { colorscheme = { "neonnight" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {

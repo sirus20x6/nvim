@@ -5,26 +5,23 @@ return {
   opts = {},
   config = function()
     local highlight = {
-      "RainbowRed",
-      "RainbowYellow",
+      "RainbowPurple",
       "RainbowBlue",
+      "RainbowPink",
+      "RainbowCyan",
       "RainbowOrange",
       "RainbowGreen",
       "RainbowViolet",
-      "RainbowCyan",
     }
-
     local hooks = require("ibl.hooks")
-    -- create the highlight groups in the highlight setup hook, so they are reset
-    -- every time the colorscheme changes
     hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-      vim.api.nvim_set_hl(0, "RainbowRed", { fg = "#ff0000" })
-      vim.api.nvim_set_hl(0, "RainbowYellow", { fg = "#ffff00" })
-      vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#00a9ff" })
-      vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#ff9000" })
-      vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#00ff00" })
-      vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#ff00ff" })
-      vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#00ffff" })
+      vim.api.nvim_set_hl(0, "RainbowPink", { fg = "#FF00FF" })     -- Outrun Pink
+      vim.api.nvim_set_hl(0, "RainbowPurple", { fg = "#B700FF" })   -- Outrun Purple
+      vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#00E5FF" })     -- Electric Blue
+      vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#FF9100" })   -- Neon Orange
+      vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#00ff76" })    -- Neon Green
+      vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#D500F9" })   -- Electric Purple
+      vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#00B8D4" })     -- Bright Cyan
     end)
 
     -- Configure rainbow delimiters

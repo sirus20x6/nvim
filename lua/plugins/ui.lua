@@ -275,24 +275,6 @@ return {
   },
 
   -- Color scheme
- {
-    "sirus20x6/neonnight.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      -- Debug information
-      print("NeonNight plugin directory: " .. vim.fn.fnamemodify(vim.fn.finddir('neonnight.nvim', vim.o.runtimepath), ':p'))
-      
-      local ok, _ = pcall(vim.cmd, [[colorscheme neonnight]])
-      if not ok then
-        print("Failed to load neonnight colorscheme")
-        -- Fallback to a default colorscheme
-        vim.cmd([[colorscheme default]])
-      else
-        print("NeonNight colorscheme loaded successfully")
-      end
-    end,
-  },
   -- Icons
   { "nvim-tree/nvim-web-devicons", lazy = true },
 

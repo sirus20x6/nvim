@@ -41,9 +41,10 @@ return {
         show_end = true,
         injected_languages = true,
         priority = 1024,
-      },
+      }
     })
 
+    -- This hook enables the scope highlighting feature
     hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
   end,
   dependencies = {

@@ -22,7 +22,7 @@ require("lazy").setup({
     { import = "plugins" },
     -- import C++ development configuration
     { import = "plugins.cpp-dev" },
-    { import = "plugins.neonnight" },
+    -- { import = "plugins.neonnight" },
     { import = "plugins.telescope" },
     { import = "plugins.lualine" },
     { import = "plugins.indent-blankline" },
